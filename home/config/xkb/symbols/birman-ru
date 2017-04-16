@@ -1,0 +1,57 @@
+partial alphanumeric_keys
+xkb_symbols "birman" {
+
+    include "ru(winkeys)"
+
+    key <AE01> { [           1,      exclam, 0x010000b9, 0x010000a1 ] }; // ¹ ¡
+    key <AE02> { [           2,    quotedbl, 0x010000b2, 0x010000bd ] }; // ² ½
+    key <AE03> { [           3,  numerosign, 0x010000b3, 0x01002153 ] }; // ³ ⅓
+    key <AE04> { [           4,   semicolon,     dollar, 0x010000bc ] }; // $ ¼
+    key <AE05> { [           5,     percent, 0x01002030             ] }; // ‰
+    key <AE06> { [           6,       colon, 0x01002191, dead_circumflex ] }; // ↑ ^
+    key <AE07> { [           7,    question,       none, 0x010000bf ] }; //   ¿
+    key <AE08> { [           8,    asterisk, 0x0100221e             ] }; // ∞
+    key <AE09> { [           9,   parenleft, 0x01002190,       less ] }; // ← <
+    key <AE10> { [           0,  parenright, 0x01002192,    greater ] }; // → >
+    key <AE11> { [       minus,  underscore, 0x01002014, 0x01002013 ] }; // — –
+    key <AE12> { [       equal,        plus, 0x01002260, notequal ] }; // ≠ ±
+
+    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,      acute, dead_grave  ] }; // ´ `
+    key <AD01> { [   Cyrillic_shorti,   Cyrillic_SHORTI,       none, dead_breve  ] }; //   ˘
+    key <AD03> { [        Cyrillic_u,        Cyrillic_U, 0x010020ac              ] }; // €
+    key <AD04> { [       Cyrillic_ka,       Cyrillic_KA, 0x010000ae, dead_abovering ] }; // ® °
+    key <AD05> { [       Cyrillic_ie,       Cyrillic_IE, 0x01002122              ] }; // ™
+    key <AD06> { [       Cyrillic_en,       Cyrillic_EN, 0x01000463, 0x01000462  ] }; // ѣ Ѣ
+    key <AD07> { [      Cyrillic_ghe,      Cyrillic_GHE, 0x01000475, 0x01000474  ] }; // ѵ Ѵ
+    key <AD08> { [      Cyrillic_sha,      Cyrillic_SHA, 0x01000456, 0x01000406  ] }; // і І
+    key <AD09> { [    Cyrillic_shcha,    Cyrillic_SHCHA, 0x01000473, 0x01000472  ] }; // ѳ Ѳ
+    key <AD10> { [       Cyrillic_ze,       Cyrillic_ZE, 0x010000b4, 0x010002dd  ] }; // ´ ˝
+    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA, bracketleft, braceleft  ] }; // [ {
+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, bracketright, braceright  ] }; // ] }
+
+    key <AC01> { [       Cyrillic_ef,       Cyrillic_EF, 0x01002248, 0x01002318  ] }; // ≈ ⌘
+    key <AC02> { [     Cyrillic_yeru,     Cyrillic_YERU, 0x010000a7              ] }; // §
+    key <AC03> { [       Cyrillic_ve,       Cyrillic_VE, 0x010000b0, 0x01002300  ] }; // ° ⌀
+    key <AC04> { [        Cyrillic_a,        Cyrillic_A, 0x010000a3              ] }; // £
+    key <AC06> { [       Cyrillic_er,       Cyrillic_ER, 0x010020bd              ] }; // ₽
+    key <AC07> { [        Cyrillic_o,        Cyrillic_O, 0x0100201e              ] }; // „
+    key <AC08> { [       Cyrillic_el,       Cyrillic_EL, 0x0100201c, 0x01002018  ] }; // “ ‘
+    key <AC09> { [       Cyrillic_de,       Cyrillic_DE, 0x0100201d, 0x01002019  ] }; // ” ’
+    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE, 0x01002018, dead_diaeresis ] }; // ‘ ¨
+    key <AC11> { [        Cyrillic_e,        Cyrillic_E, 0x01002019              ] }; // ’
+
+    key <AB01> { [       Cyrillic_ya,       Cyrillic_YA,      none, dead_cedilla ] }; //   ¸
+    key <AB02> { [      Cyrillic_che,      Cyrillic_CHE, 0x010000d7, 0x010000b7  ] }; // × ·
+    key <AB03> { [       Cyrillic_es,       Cyrillic_ES, 0x010000a9, 0x010000a2  ] }; // © ¢
+    key <AB04> { [       Cyrillic_em,       Cyrillic_EM, 0x01002193, dead_caron  ] }; // ↓ ˇ
+    key <AB05> { [        Cyrillic_i,        Cyrillic_I, 0x010000df, 0x01001e9e  ] }; // ß ẞ
+    key <AB06> { [       Cyrillic_te,       Cyrillic_TE,       none, dead_tilde  ] }; //   ~
+    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, 0x01002212, 0x01002022  ] }; // − •
+    key <AB08> { [       Cyrillic_be,       Cyrillic_BE, 0x010000ab, 0x0100201e  ] }; // « „
+    key <AB09> { [       Cyrillic_yu,       Cyrillic_YU, 0x010000bb, 0x0100201c  ] }; // » “
+    key <AB10> { [            period,             comma,   ellipsis, dead_acute  ] }; // … ´
+
+    key <SPCE> { [             space,             space, nobreakspace, nobreakspace ] }; // nbsp
+
+    include "level3(ralt_switch)"
+};

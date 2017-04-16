@@ -1,0 +1,56 @@
+partial alphanumeric_keys
+xkb_symbols "birman" {
+
+    include "us"
+
+    key <TLDE> { [       grave,  asciitilde,      grave, dead_grave ] }; // ` `
+    key <AE01> { [           1,      exclam, 0x010000b9, 0x010000a1 ] }; // ¹ ¡
+    key <AE02> { [           2,          at, 0x010000b2, 0x010000bd ] }; // ² ½
+    key <AE03> { [           3,  numbersign, 0x010000b3, 0x01002153 ] }; // ³ ⅓
+    key <AE04> { [           4,      dollar,     dollar, 0x010000bc ] }; // $ ¼
+    key <AE05> { [           5,     percent, 0x01002030             ] }; // ‰
+    key <AE06> { [           6, asciicircum, 0x01002191, dead_circumflex ] }; // ↑ ^
+    key <AE07> { [           7,   ampersand,       none, 0x010000bf ] }; //   ¿
+    key <AE08> { [           8,    asterisk, 0x0100221e             ] }; // ∞
+    key <AE09> { [           9,   parenleft, 0x01002190,       less ] }; // ← <
+    key <AE10> { [           0,  parenright, 0x01002192,    greater ] }; // → >
+    key <AE11> { [       minus,  underscore, 0x01002014, 0x01002013 ] }; // — –
+    key <AE12> { [       equal,        plus, 0x01002260,   notequal ] }; // ≠ ±
+
+    key <AD01> { [           q,           Q,       none, dead_breve  ] }; //   ˘
+    key <AD03> { [           e,           E, 0x010020ac              ] }; // €
+    key <AD04> { [           r,           R, 0x010000ae, dead_abovering ] }; // ® °
+    key <AD05> { [           t,           T, 0x01002122              ] }; // ™
+    key <AD06> { [           y,           Y, 0x01000463, 0x01000462  ] }; // ѣ Ѣ
+    key <AD07> { [           u,           U, 0x01000475, 0x01000474  ] }; // ѵ Ѵ
+    key <AD08> { [           i,           I, 0x01000456, 0x01000406  ] }; // і І
+    key <AD09> { [           o,           O, 0x01000473, 0x01000472  ] }; // ѳ Ѳ
+    key <AD10> { [           p,           P, 0x010000b4, 0x010002dd  ] }; // ´ ˝
+
+    key <AC01> { [           a,           A, 0x01002248, 0x01002318  ] }; // ≈ ⌘
+    key <AC02> { [           s,           S, 0x010000a7              ] }; // §
+    key <AC03> { [           d,           D, 0x010000b0, 0x01002300  ] }; // ° ⌀
+    key <AC04> { [           f,           F, 0x010000a3              ] }; // £
+    key <AC06> { [           h,           H, 0x010020bd              ] }; // ₽
+    key <AC07> { [           j,           J, 0x0100201e              ] }; // „
+    key <AC08> { [           k,           K, 0x0100201c, 0x01002018  ] }; // “ ‘
+    key <AC09> { [           l,           L, 0x0100201d, 0x01002019  ] }; // ” ’
+    key <AC10> { [   semicolon,       colon, 0x01002018, dead_diaeresis ] }; // ‘ ¨
+    key <AC11> { [  apostrophe,    quotedbl, 0x01002019              ] }; // ’
+
+    key <AB01> { [           z,           Z,      none, dead_cedilla ] }; //   ¸
+    key <AB02> { [           x,           X, 0x010000d7, 0x010000b7  ] }; // × ·
+    key <AB03> { [           c,           C, 0x010000a9, 0x010000a2  ] }; // © ¢
+    key <AB04> { [           v,           V, 0x01002193, dead_caron  ] }; // ↓ ˇ
+    key <AB05> { [           b,           B, 0x010000df, 0x01001e9e  ] }; // ß ẞ
+    key <AB06> { [           n,           N,       none, dead_tilde  ] }; //   ~
+    key <AB07> { [           m,           M, 0x01002212, 0x01002022  ] }; // − •
+    key <AB08> { [       comma,        less, 0x010000ab, 0x0100201e  ] }; // « „
+    key <AB09> { [      period,     greater, 0x010000bb, 0x0100201c  ] }; // » “
+    key <AB10> { [       slash,    question,   ellipsis, dead_acute  ] }; // … ´
+
+    key <SPCE> { [       space,       space, nobreakspace, nobreakspace ] }; // nbsp
+
+    include "level3(ralt_switch)"
+
+};
